@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: medium;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+.img{
+    background-color: rgb(140, 125, 95);
+    align-items: center;
+}
+
+img{
+    margin-top: 2em;
+    max-width: 100%;
+    align-items: center;
+}
+
+figcaption{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.text{
+    text-align: left;
+    padding: 1em;
+    margin: auto;
+}
+
+ol>li{
+    padding: 1rem;
+}
+
+a{
+    color: white;
+}
