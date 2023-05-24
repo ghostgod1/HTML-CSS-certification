@@ -15,15 +15,12 @@ h1{
     font-size: 2em;
 }
 
-.img{
-    background-color: rgb(140, 125, 95);
-    align-items: center;
-}
-
 img{
-    margin-top: 2em;
+    padding: 1em;
+    margin: 2em;
     max-width: 100%;
     align-items: center;
+    background-color: bisque;
 }
 
 figcaption{
