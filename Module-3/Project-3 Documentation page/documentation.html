@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1."/>
+        <meta name="description" content="C++ Documentation"/>
+        <title>C++ Documentation</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Artificial Intelligence</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Machine_Learning">Machine Learning</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Natural_Language_Processing_(NLP)">Natural Language Processing (NLP)</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Computer_Vision">Computer Vision</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Data_Mining">Data Mining</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Robotics">Robotics</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        Artificial Intelligence (AI) is a multidisciplinary field that 
+                        focuses on creating intelligent machines capable of performing 
+                        tasks that typically require human intelligence. 
+                        It involves the development of algorithms, models, 
+                        and systems that can exhibit behaviors such as learning, 
+                        problem-solving, perception, and decision-making.
+                    </p>
+                    <p>
+                        The primary goals of AI are to create machines that can think 
+                        and reason like humans, exhibit intelligent behavior, and 
+                        provide solutions to complex problems. AI aims to develop 
+                        systems that can understand, interpret, and interact with the 
+                        world in a manner similar to humans.
+                    </p>
+                    <p>AI encompasses various core areas</p>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Data Mining</li>
+                        <li>Robotics</li>
+                    </ul>
+                    <p>
+                        These areas work together to develop intelligent systems that 
+                        can learn from data, understand and generate human language, 
+                        perceive and interpret visual information, interact with the 
+                        physical world, and reason with knowledge.
+                    </p>
+                    <p>
+                        AI finds applications in numerous fields and industries. 
+                        It is used in areas such as healthcare, finance, gaming, 
+                        cybersecurity, transportation, agriculture, and more. 
+                        AI technologies power virtual assistants, recommendation 
+                        systems, autonomous vehicles, medical diagnosis tools, fraud 
+                        detection systems, and intelligent automation solutions, among 
+                        others.
+                    </p>
+                    <p>
+                        The field of AI is rapidly evolving, with ongoing research and 
+                        advancements driving its progress. Future perspectives include 
+                        the development of more sophisticated AI models, improved natural 
+                        language understanding and generation, enhanced computer vision 
+                        capabilities, ethical AI frameworks, and the integration of AI 
+                        with other emerging technologies like blockchain and Internet of 
+                        Things (IoT).
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Machine_Learning">
+                <header>Machine Learning</header>
+                <article>
+                    <p>  
+                        Machine Learning (ML) is a subfield of Artificial Intelligence (AI) 
+                        that focuses on the development of algorithms and models that enable 
+                        computers to learn and make predictions or decisions without explicit 
+                        programming. ML systems learn from data, identify patterns, and make 
+                        informed predictions or take actions based on that learning. Here are 
+                        various subtopics that delve into different aspects of Machine Learning:
+                    </p>
+                    <ol>
+                        <li>Supervised Learning:</li>
+                        <ul>
+                            <li>
+                                Definition: Supervised learning algorithms learn from labeled 
+                                training data, where each data point is associated with a known 
+                                target or outcome.
+                            </li>
+                            <li>
+                                Regression: Regression models predict continuous or numeric values. 
+                                Examples include predicting housing prices based on features like area, 
+                                location, etc.
+                                <br>Linear regreesion function;
+                                <code>
+                                    >from sklearn.linear_model import LinearRegression
+                                    ># Create a Linear Regression model and fit the data
+                                    >model = LinearRegression().fit(X, y)
+                                </code>
+                            </li>
+                            <li>
+                                Classification: Classification models assign predefined labels or classes to 
+                                new data points. For example, email spam detection or image classification.
+                                <br>K-NN function:
+                                <code>
+                                    >from sklearn.neighbors import KNeighborsClassifier
+                                    ># Create a KNN Classifier and fit the data
+                                    >model = KNeighborsClassifier().fit(X, y)
+                                </code>
+                            </li>
+                        </ul>
+                        <li> Unsupervised Learning:</li>
+                        <ul>
+                            <li>
+                                Definition: Unsupervised learning algorithms work with unlabeled data and aim 
+                                to discover patterns, relationships, or structures within the data.
+                            </li>
+                            <li>
+                                Clustering: Clustering algorithms group similar data points together 
+                                based on their characteristics. Examples include customer segmentation 
+                                or document clustering.
+                            </li>
+                            <li>
+                                Dimensionality Reduction: Dimensionality reduction techniques aim to 
+                                reduce the number of features or variables while preserving important 
+                                information. Principal Component Analysis (PCA) is a common technique used for 
+                                this purpose.
+                            </li>
+                        </ul>
+                        <li>Reinforcement Learning:</li>
+                        <ul>
+                            <li>
+                                Definition: Reinforcement learning involves an agent interacting with an 
+                                environment and learning through trial and error. The agent receives rewards 
+                                or punishments based on its actions and aims to maximize the cumulative reward.
+                            </li>
+                            <li>
+                                Markov Decision Process (MDP): MDP provides a mathematical framework for 
+                                modeling sequential decision-making problems in reinforcement learning.
+                            </li>
+                            <li>
+                                Policy Learning: Policy learning algorithms learn the optimal policy for 
+                                an agent to take actions in an environment to maximize long-term rewards.
+                            </li>
+                            <li>
+                                Q-Learning: Q-Learning is a popular reinforcement learning algorithm that uses 
+                                a value function called the Q-value to estimate the expected cumulative rewards 
+                                for taking specific actions in a given state.
+                            </li>
+                        </ul>
+                        <li>Deep Learning:</li>
+                        <ul>
+                            <li>
+                                Definition: Deep learning involves building and training neural networks with 
+                                multiple layers to learn hierarchical representations of data.
+                            </li>
+                            <li>
+                                Convolutional Neural Networks (CNN): CNNs are commonly used for computer vision 
+                                tasks. They are capable of learning spatial hierarchies of features and are used 
+                                in image classification, object detection, and image generation.
+                            </li>
+                            <li>
+                                Recurrent Neural Networks (RNN): RNNs are designed to process sequential data, 
+                                where the output of a previous step serves as input to the current step. They are 
+                                used in tasks like speech recognition, language modeling, and machine translation.
+                            </li>                                
+                            <li>
+                                Generative Adversarial Networks (GAN): GANs consist of two neural networks, a generator 
+                                and a discriminator, which compete against each other. GANs are used for generating realistic 
+                                synthetic data, image synthesis, and data augmentation.
+                            </li>
+                        </ul>
+                        <li>Transfer Learning</li>
+                        <ul>
+                            <li>
+                                Definition: Transfer learning leverages knowledge learned from one task to improve learning 
+                                or performance on another related task.
+                            </li>
+                            <li>
+                                Pretrained Models: Pretrained models are neural networks trained on large-scale datasets for 
+                                specific tasks. These models can be used as a starting point for new tasks, allowing for faster 
+                                training and better performance.
+                            </li>
+                            <li>
+                                Fine-tuning: Fine-tuning involves taking a pretrained model and updating its weights on a new 
+                                dataset to adapt it to a specific task or domain.
+                            </li>
+                            <li>
+                                Domain Adaptation: Domain adaptation techniques aim to transfer knowledge from a source domain 
+                                to a target domain where the data distributions may differ. This is useful when training data is 
+                                scarce in the target domain.
+                            </li>
+                        </ul>
+                    </ol>
+                    <p>
+                        Machine Learning is a vast and rapidly evolving field, with these subtopics representing a fraction of 
+                        the techniques and concepts within it. Researchers and practitioners continue to explore new algorithms, 
+                        models, and applications, driving the advancement of intelligent systems across various industries.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Natural_Language_Processing_(NLP)">
+                <header>Natural Language Processing (NLP)</header>
+                <article>
+                    <p>
+                        NLP stands for Natural Language Processing, which is a subfield of Artificial Intelligence (AI) that focuses 
+                        on the interaction between computers and human language. NLP involves the development of algorithms, models, 
+                        and systems that enable computers to understand, interpret, and generate human language in a way that is both 
+                        meaningful and useful. Here's a detailed explanation of NLP:
+                    </p>
+                    <ol>
+                        <li>Text Understanding:</li>
+                        <ul>
+                            <li>
+                                Tokenization: Tokenization involves breaking down a text into individual words, phrases, or 
+                                sentences (tokens) to facilitate further analysis.
+                            </li>
+                            <li>
+                                Part-of-Speech (POS) Tagging: POS tagging assigns grammatical labels (e.g., noun, verb, adjective) to words 
+                                in a sentence to understand their syntactic roles.
+                            </li>
+                            <li>
+                                Parsing: Parsing involves analyzing the syntactic structure of a sentence to understand relationships between 
+                                words and their hierarchical organization.
+                            </li>
+                        </ul>
+                        <li>Named Entity Recognition (NER):</li>
+                        <ul>
+                            <li>
+                                Definition: NER is the task of identifying and classifying named entities in text, such as names of people, 
+                                organizations, locations, dates, and other specific entities.</li>
+                            <li>
+                                Entity Classification: NER algorithms classify identified entities into predefined categories, such as person, 
+                                organization, location, etc.
+                            </li>
+                            <li>
+                                Entity Linking: Entity linking involves connecting named entities in text to a knowledge base or database, 
+                                providing additional information and context.
+                            </li>
+                        </ul>
+                        <li>Sentiment Analysis:</li>
+                        <ul>
+                            <li>
+                                Definition: Sentiment analysis, also known as opinion mining, aims to determine the sentiment or emotion 
+                                expressed in a piece of text, whether it is positive, negative, or neutral.
+                            </li>
+                            <li>
+                                Document-Level Sentiment Analysis: Analyzing the overall sentiment of an entire document or text.
+                            </li>
+                            <li>
+                                Aspect-Based Sentiment Analysis: Identifying the sentiment towards specific aspects or entities 
+                                mentioned in a text.
+                            </li>
+                            <li>
+                                Fine-Grained Sentiment Analysis: Assigning sentiment scores or labels on a finer scale 
+                                (e.g., very positive, slightly negative) instead of just positive or negative.
+                            </li>
+                        </ul>
+                        <li>Machine Translation:</li>
+                        <ul>
+                            <li>
+                                Definition: Machine translation involves automatically translating text or speech from one language to 
+                                another.
+                            </li>
+                            <li>
+                                Rule-Based Machine Translation: Translating by following a set of linguistic and grammatical rules between 
+                                the source and target languages.
+                            </li>
+                            <li>
+                                Statistical Machine Translation: Translating using statistical models that learn from large parallel corpora 
+                                to identify translations patterns.
+                            </li>
+                            <li>
+                                Neural Machine Translation: Translating using neural networks that learn the translation mappings directly from 
+                                sentence pairs, achieving state-of-the-art performance.
+                            </li>
+                        </ul>
+                        <li>Question Answering:</li>
+                        <ul>
+                            <li>
+                                Definition: Question answering systems aim to understand questions posed in natural language and provide 
+                                relevant and accurate answers.
+                            </li>
+                            <li>
+                                Information Retrieval: Retrieving relevant information from a large corpus or knowledge base based on 
+                                the query.
+                            </li>
+                            <li>
+                                Passage Ranking: Determining the most relevant passages or documents related to the question.
+                            </li>
+                            <li>
+                                Answer Extraction: Extracting the actual answer from the relevant passages or documents.
+                            </li>
+                        </ul>
+                    </ol>
+                    <p>
+                        NLP has diverse applications, such as chatbots, virtual assistants, information retrieval systems, sentiment 
+                        analysis tools, language translation services, and much more. Advances in NLP have led to significant improvements 
+                        in human-computer interaction, enabling machines to understand and process human language more effectively.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Computer_Vision">
+                <header>Computer Vision</header>
+                <article>
+                    <p>
+                        Computer vision is a subfield of artificial intelligence (AI) that focuses on enabling computers to gain a 
+                        high-level understanding of visual information from digital images or videos. It involves developing algorithms, 
+                        models, and systems that can interpret and analyze visual data in a way that is similar to human vision. Here's a 
+                        detailed explanation of computer vision
+                    </p>
+                    <ol>
+                        <li>Image Processing:</li>
+                        <ul>
+                            <li>
+                                Image Acquisition: Gathering digital images or videos from various sources, such as cameras or databases.
+                            </li>
+                            <li>
+                                Image Preprocessing: Enhancing and manipulating images to improve their quality, remove noise, or adjust 
+                                properties like contrast and brightness.
+                            </li>
+                            <li>
+                                Image Filtering: Applying filters or operations to extract specific features or characteristics from images, 
+                                such as edge detection, blurring, or sharpening.
+                            </li>
+                        </ul>
+                        <li>Image Understanding:</li>
+                        <ul>
+                            <li>
+                                Object Detection: Identifying and localizing specific objects or regions of interest within an image or video. 
+                                This involves techniques like bounding box detection, object recognition, and instance segmentation.
+                            </li>
+                            <li>
+                                Image Classification: Assigning predefined labels or categories to images based on their content or features. 
+                                This can involve training machine learning models to recognize and classify objects, scenes, or patterns within images.
+                            </li>
+                            <li>
+                                Image Segmentation: Dividing an image into meaningful regions or segments based on shared properties. This allows 
+                                for the identification and separation of different objects or areas within an image.
+                            </li>
+                        </ul>
+                        <li>Feature Extraction and Representation:</li>
+                        <ul>
+                            <li>
+                                Feature Extraction: Extracting relevant and informative features from images to represent their content. 
+                                This can involve techniques like scale-invariant feature transform (SIFT), histogram of oriented gradients (HOG), 
+                                or deep learning-based feature extraction.
+                            </li>
+                            <li>
+                                Feature Representation: Representing extracted features in a format that is suitable for further analysis or 
+                                machine learning tasks. This can involve encoding features as vectors or matrices, allowing for comparison and 
+                                similarity measurement between images.
+                            </li>
+                        </ul>
+                        <li>Image Recognition and Understanding:</li>
+                        <ul>
+                            <li>
+                                Object Recognition: Identifying and classifying objects within images or videos based on their visual features. 
+                                This can involve training deep learning models, such as convolutional neural networks (CNNs), on large labeled datasets.
+                            </li>
+                            <li>
+                                Scene Understanding: Analyzing images or videos to understand the overall scene context, including objects, 
+                                relationships, and interactions between elements.
+                            </li>
+                            <li>
+                                Image Captioning: Generating natural language descriptions or captions for images, combining computer vision 
+                                techniques with natural language processing to produce meaningful textual descriptions.
+                            </li>
+                        </ul>
+                        <li>Applications of Computer Vision:</li>
+                        <ul>
+                            <li>
+                                Autonomous Vehicles: Computer vision plays a crucial role in enabling autonomous vehicles to perceive and interpret 
+                                their surroundings, detect obstacles, and make decisions based on visual information.
+                            </li>
+                            <li>
+                                Surveillance and Security: Computer vision is used for video surveillance systems, object tracking, facial recognition, 
+                                and activity recognition in security applications.
+                            </li>
+                            <li>
+                                Medical Imaging: Computer vision assists in medical image analysis, aiding in the diagnosis and treatment of various 
+                                medical conditions. It includes tasks like tumor detection, image segmentation, and radiology image interpretation.
+                            </li>
+                            <li>
+                                Augmented Reality (AR) and Virtual Reality (VR): Computer vision techniques are used to enable AR and VR applications, 
+                                allowing for the interaction between virtual and real-world objects.
+                            </li>
+                        </ul>
+                    </ol>
+                    <p>
+                        Computer vision is an exciting field with a wide range of applications and ongoing research. Advances in computer vision technology 
+                        have the potential to revolutionize industries and impact various aspects of our daily lives, from healthcare and transportation to 
+                        entertainment and robotics.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Data_Mining">
+                <header>Data Mining</header>
+                <article>
+                    <p>
+                        Data mining is the process of extracting useful and meaningful patterns, insights, and knowledge from large datasets. It involves 
+                        utilizing various algorithms, statistical techniques, and computational tools to discover hidden patterns, relationships, and trends 
+                        within the data. Data mining is employed in diverse fields and industries to make informed decisions, gain valuable insights, and solve 
+                        complex problems. Here's a detailed explanation of data mining:
+                    </p>
+                    <ol>
+                        <li>Data Preparation:</li>
+                        <ul>
+                            <li>
+                                Data Cleaning: Removing noise, inconsistencies, and errors from the dataset, ensuring data quality and reliability.
+                            </li>
+                            <li>
+                                Data Integration: Combining data from multiple sources and integrating them into a unified dataset for analysis.
+                            </li>
+                            <li>
+                                Data Transformation: Converting data into a suitable format or representation for analysis, such as normalization, 
+                                discretization, or feature engineering.
+                            </li>
+                        </ul>
+                        <li>Association Rule Learning:</li>
+                        <ul>
+                            <li>
+                                Definition: Association rule learning identifies relationships or patterns among items in large datasets.
+                            </li>
+                            <li>
+                                Market Basket Analysis: Discovering associations between items frequently purchased together, commonly used in 
+                                retail and e-commerce for product recommendations.
+                            </li>
+                            <li>
+                                Frequent Itemset Mining: Identifying sets of items that frequently co-occur in the dataset, useful for market 
+                                segmentation or product bundling strategies.
+                            </li>
+                        </ul>
+                        <li>Clustering:</li>
+                        <ul>
+                            <li>
+                                Definition: Clustering algorithms group similar data points together based on their characteristics or proximity 
+                                in the dataset.
+                            </li>
+                            <li>
+                                K-means Clustering: Partitioning the data into k clusters based on minimizing the distance between data points and 
+                                cluster centroids.
+                            </li>
+                            <li>
+                                Hierarchical Clustering: Creating a hierarchy of clusters by iteratively merging or splitting clusters based on 
+                                their similarities.
+                            </li>
+                            <li>
+                                Density-Based Clustering: Identifying dense regions of data points and forming clusters based on local densities, 
+                                useful for discovering clusters of irregular shapes.
+                            </li>
+                        </ul>
+                        <li>Classification:</li>
+                        <ul>
+                            <li>
+                                Definition: Classification involves assigning predefined labels or classes to new data points based on patterns 
+                                learned from labeled training data.
+                            </li>
+                            <li>
+                                Decision Trees: Constructing a tree-like model that splits data based on feature attributes to reach class labels.
+                                <br>Decision Tree function:
+                                <code>
+                                    >from sklearn.tree import DecisionTreeClassifier
+                                    ># Create a Decision Tree Classifier and fit the data
+                                    >model = DecisionTreeClassifier().fit(X, y)
+                                </code>
+                            </li>
+                            <li>
+                                Support Vector Machines (SVM): Mapping data points into a high-dimensional space to find a hyperplane that maximally 
+                                separates different classes.
+                                <br>Support Vector Machine function:
+                                <code>
+                                    >from sklearn.svm import SVC
+                                    ># Create an SVM Classifier and fit the data
+                                    >model = SVC().fit(X, y)
+                                </code>
+                            </li>
+                            <li>
+                                Random Forests: Ensemble models that combine multiple decision trees to improve accuracy and robustness.
+                                <br>Random Forest function:
+                                <code>
+                                    >from sklearn.ensemble import RandomForestRegressor
+                                    ># Create a Random Forest Regressor and fit the data
+                                    >model = RandomForestRegressor().fit(X, y)
+                                </code>
+                            </li>
+                        </ul>
+                        <li>Anomaly Detection:</li>
+                        <ul>
+                            <li>
+                                Definition: Anomaly detection identifies abnormal or unusual patterns or data points in a dataset that deviate 
+                                significantly from the norm.
+                            </li>
+                            <li>
+                                Statistical Methods: Utilizing statistical techniques to detect anomalies based on deviations from the expected 
+                                distribution of data.
+                            </li>
+                            <li>
+                                Machine Learning Approaches: Training models on normal data and identifying instances that have a high deviation or 
+                                low likelihood based on the learned patterns.
+                            </li>
+                            <li>
+                                Network Intrusion Detection: Identifying malicious activities or attacks in computer networks by detecting unusual 
+                                patterns of network traffic.
+                            </li>
+                        </ul>
+                    </ol>
+                    <p>
+                        Data mining has widespread applications in various domains, including business, finance, healthcare, marketing, fraud detection, 
+                        and more. It enables organizations to extract valuable insights, optimize processes, make data-driven decisions, and discover 
+                        previously unknown relationships or trends in large and complex datasets.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Robotics">
+                <header>Robotics</header>
+                <article>
+                    <p>
+                        obotics is a multidisciplinary field that combines elements of engineering, computer science, and other domains to design, develop, 
+                        and operate robotic systems. Robotics focuses on creating machines, known as robots, that can sense, interact with, and manipulate 
+                        their environment to perform tasks autonomously or under human guidance. Here's a detailed explanation of robotics:
+                    </p>
+                    <ol>
+                        <li>Robot Components:</li>
+                        <ul>
+                            <li>
+                                Manipulators: Robotic manipulators consist of mechanical arms and grippers that enable robots to interact with the physical world. 
+                                They may have multiple joints and links for increased flexibility and dexterity.
+                            </li>
+                            <li>
+                                Sensors: Robots use various sensors, such as cameras, proximity sensors, force sensors, and range finders, to perceive and gather 
+                                information about their surroundings
+                            </li>
+                            <li>
+                                Actuators: Actuators, such as electric motors, pneumatic systems, or hydraulic systems, provide the necessary power and control for 
+                                the robot's movements.
+                            </li>
+                        </ul>
+                        <li>Robot Control:</li>
+                        <ul>
+                            <li>
+                                Kinematics: Kinematics deals with the study of the robot's motion, including the position, velocity, and acceleration of its individual 
+                                joints or end effector.
+                            </li>
+                            <li>
+                                Dynamics: Dynamics focuses on understanding the forces and torques acting on a robot and how they affect its motion and stability.
+                            </li>
+                            <li>
+                                Control Systems: Robot control systems involve algorithms and techniques to control the robot's actuators based on sensory feedback, 
+                                enabling precise and accurate movements.
+                            </li>
+                        </ul>
+                        <li>Robot Perception:</li>
+                        <ul>
+                            <li>
+                                Computer Vision: Robots use computer vision techniques to process visual data, enabling tasks such as object recognition, scene 
+                                understanding, and navigation based on visual input.
+                            </li>
+                            <li>
+                                Sensing and Localization: Robots employ various sensors, including range finders, lidar, and GPS, to perceive their environment and 
+                                determine their own position and orientation within it.
+                            </li>
+                            <li>
+                                Environment Mapping: Robots create maps of their surroundings to navigate and plan their movements efficiently. Mapping can involve 
+                                techniques like simultaneous localization and mapping (SLAM).
+                            </li>
+                        </ul>
+                        <li>Robot Planning and Decision Making:</li>
+                        <ul>
+                            <li>
+                                Path Planning: Robots generate optimal or collision-free paths to reach a target location or perform a task. This involves algorithms 
+                                such as A*, Dijkstra's algorithm, or potential field methods.
+                            </li>
+                            <li>
+                                Task Planning: Task planning involves determining a sequence of actions or behaviors required to accomplish a specific goal or task, 
+                                considering constraints and dependencies.
+                            </li>
+                            <li>
+                                Motion Planning: Motion planning focuses on planning the robot's movements, considering kinematic and dynamic constraints, obstacle 
+                                avoidance, and optimization of trajectories.
+                            </li>
+                        </ul>
+                        <li>Applications of Robotics:</li>
+                        <ul>
+                            <li>
+                                Industrial Automation: Robots are widely used in manufacturing and production processes to perform repetitive or dangerous tasks 
+                                with precision and efficiency.
+                            </li>
+                            <li>
+                                Healthcare and Medical Robotics: Robots are employed in surgery, rehabilitation, patient care, and assistance to improve healthcare 
+                                outcomes and enhance patient safety.
+                            </li>
+                            <li>
+                                Exploration and Space Robotics: Robots are utilized in space missions and exploration to conduct research, perform experiments, and 
+                                gather data in environments unsuitable for humans.
+                            </li>
+                            <li>
+                                Service Robotics: Service robots assist in various settings such as homes, hotels, and retail environments, providing tasks like cleaning, 
+                                delivery, customer service, and companionship.
+                            </li>
+                        </ul>
+                    </ol>
+                    <p>
+                        Robotics continues to advance rapidly, with ongoing research in areas like human-robot interaction, artificial intelligence, machine learning, 
+                        and autonomous systems. As technology progresses, robots are becoming increasingly capable, versatile, and integrated into our daily lives, 
+                        contributing to increased automation, improved efficiency, and enhanced human-machine collaboration.
+                    </p>
+                </article>
+            </section>
+
+        </main>
+    </body>
+</html>
