@@ -31,7 +31,7 @@ figcaption{
 .text{
     text-align: left;
     padding: 1em;
-    margin: auto;
+    margin: 0 auto 50px auto;
 }
 
 ol>li{
@@ -40,4 +40,8 @@ ol>li{
 
 a{
     color: white;
+}
+
+ul{
+    margin: 0 auto 50px auto;
 }
