@@ -50,7 +50,7 @@ header {
 }
 
 nav {
-    width: 50%;
+    width: 70%;
     max-width: 500px;
     height: 100px;
 }
@@ -128,7 +128,7 @@ h2{
     gap: 16px;
 }
 
-.service, .place {
+.service, .place, .video {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +140,7 @@ h2{
     background-color: aliceblue;
 }
 
-.service > .heading, .place > .heading{
+.service > .heading, .place > .heading, .video > .heading{
     background-color: #79E0EE;
     color:#000;
     padding: 15px 0;
@@ -168,28 +168,79 @@ h2{
     font-weight: 500;
 }
 
-.place{
-    width: 50em;
+.place, .video{
+    width: 40em;
 }
 
-.place>img{
+.video{
+    height: 30em;
+}
+
+.place>img, .video>iframe{
     width: 100%;
     height: 100%;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 700;
+}
+
+input{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 3em;
+    background-color: #D0F5BE;
+    border: 1px solid #0a0a23;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 3em;
+    font-size: 1.1rem;
+    background-color: #79E0EE;
+    border-color: white;
+    min-width: 300px;
 }
 
 @media (max-width: 1000px){
     #sub-section{
         flex-direction: column;
     }
-    .service,.place{
+    .service,.place,.video{
         max-width: 500px;
         width: 100%;
         margin: 0 auto;
         margin-bottom: 50px;
     }
-    .place>img{
+    .place>img, .video>iframe{
         max-width: 500px;
         width: 100%;
+        height: 100%;
         margin: 0 auto;
     }
 }
